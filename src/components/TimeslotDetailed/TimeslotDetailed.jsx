@@ -128,22 +128,7 @@ const DetailsButton = styled.div`
   }
 `;
 
-const PopupHover = styled.div`
-  width: 500px;
-  height: 300px;
-  z-index: 99;
-  background: white;
-  border-radius: 5px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Dashboard = () => {
+const TimeslotDetailed = () => {
 
   const logOut = () => {
     document.cookie.split(';').forEach(function(c) {
@@ -152,16 +137,8 @@ const Dashboard = () => {
     document.location = "/";
   };
 
-  const bidOnTimeslot = (e) => {
-    const tid = e.target.getAttribute('name');
-    console.log(tid);
-  }
-
   return (
     <Wrap>
-      <PopupHover style={{"display":"none"}}>
-        <h3>Are you sure?</h3>
-      </PopupHover>
       <LeftSide>
         <TopMenuLeft>
           <h3>Management System</h3>
@@ -191,8 +168,8 @@ const Dashboard = () => {
               <DetailsButton>
                 Details
               </DetailsButton>
-              <DetailsButton onClick={bidOnTimeslot} name="1">
-                Bid
+              <DetailsButton>
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -212,7 +189,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -232,7 +209,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -252,7 +229,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -272,7 +249,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -292,7 +269,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -312,149 +289,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
-              </DetailsButton>
-            </Timeslot>
-          </WeekRow>
-          <WeekRow>
-            <Timeslot>
-              <DatePoint>
-                12.11.2023
-              </DatePoint>
-              <StatusPoint>
-                Status: free
-              </StatusPoint>
-              <RolePoint>
-                Role: waiter
-              </RolePoint>
-              <ShiftPoint>
-                Shift: 8AM-6PM
-              </ShiftPoint>
-              <DetailsButton>
-                Details
-              </DetailsButton>
-              <DetailsButton>
-                Bid
-              </DetailsButton>
-            </Timeslot>
-            <Timeslot>
-              <DatePoint>
-                12.11.2023
-              </DatePoint>
-              <StatusPoint>
-                Status: free
-              </StatusPoint>
-              <RolePoint>
-                Role: waiter
-              </RolePoint>
-              <ShiftPoint>
-                Shift: 8AM-6PM
-              </ShiftPoint>
-              <DetailsButton>
-                Details
-              </DetailsButton>
-              <DetailsButton>
-                Bid
-              </DetailsButton>
-            </Timeslot>
-            <Timeslot>
-              <DatePoint>
-                12.11.2023
-              </DatePoint>
-              <StatusPoint>
-                Status: free
-              </StatusPoint>
-              <RolePoint>
-                Role: waiter
-              </RolePoint>
-              <ShiftPoint>
-                Shift: 8AM-6PM
-              </ShiftPoint>
-              <DetailsButton>
-                Details
-              </DetailsButton>
-              <DetailsButton>
-                Bid
-              </DetailsButton>
-            </Timeslot>
-            <Timeslot>
-              <DatePoint>
-                12.11.2023
-              </DatePoint>
-              <StatusPoint>
-                Status: free
-              </StatusPoint>
-              <RolePoint>
-                Role: waiter
-              </RolePoint>
-              <ShiftPoint>
-                Shift: 8AM-6PM
-              </ShiftPoint>
-              <DetailsButton>
-                Details
-              </DetailsButton>
-              <DetailsButton>
-                Bid
-              </DetailsButton>
-            </Timeslot>
-            <Timeslot>
-              <DatePoint>
-                12.11.2023
-              </DatePoint>
-              <StatusPoint>
-                Status: free
-              </StatusPoint>
-              <RolePoint>
-                Role: waiter
-              </RolePoint>
-              <ShiftPoint>
-                Shift: 8AM-6PM
-              </ShiftPoint>
-              <DetailsButton>
-                Details
-              </DetailsButton>
-              <DetailsButton>
-                Bid
-              </DetailsButton>
-            </Timeslot>
-            <Timeslot>
-              <DatePoint>
-                12.11.2023
-              </DatePoint>
-              <StatusPoint>
-                Status: free
-              </StatusPoint>
-              <RolePoint>
-                Role: waiter
-              </RolePoint>
-              <ShiftPoint>
-                Shift: 8AM-6PM
-              </ShiftPoint>
-              <DetailsButton>
-                Details
-              </DetailsButton>
-              <DetailsButton>
-                Bid
-              </DetailsButton>
-            </Timeslot>
-            <Timeslot>
-              <DatePoint>
-                12.11.2023
-              </DatePoint>
-              <StatusPoint>
-                Status: free
-              </StatusPoint>
-              <RolePoint>
-                Role: waiter
-              </RolePoint>
-              <ShiftPoint>
-                Shift: 8AM-6PM
-              </ShiftPoint>
-              <DetailsButton>
-                Details
-              </DetailsButton>
-              <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
           </WeekRow>
@@ -476,7 +311,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -496,7 +331,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -516,7 +351,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -536,7 +371,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -556,7 +391,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -576,7 +411,7 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
               </DetailsButton>
             </Timeslot>
             <Timeslot>
@@ -596,7 +431,149 @@ const Dashboard = () => {
                 Details
               </DetailsButton>
               <DetailsButton>
-                Bid
+                Reserve
+              </DetailsButton>
+            </Timeslot>
+          </WeekRow>
+          <WeekRow>
+            <Timeslot>
+              <DatePoint>
+                12.11.2023
+              </DatePoint>
+              <StatusPoint>
+                Status: free
+              </StatusPoint>
+              <RolePoint>
+                Role: waiter
+              </RolePoint>
+              <ShiftPoint>
+                Shift: 8AM-6PM
+              </ShiftPoint>
+              <DetailsButton>
+                Details
+              </DetailsButton>
+              <DetailsButton>
+                Reserve
+              </DetailsButton>
+            </Timeslot>
+            <Timeslot>
+              <DatePoint>
+                12.11.2023
+              </DatePoint>
+              <StatusPoint>
+                Status: free
+              </StatusPoint>
+              <RolePoint>
+                Role: waiter
+              </RolePoint>
+              <ShiftPoint>
+                Shift: 8AM-6PM
+              </ShiftPoint>
+              <DetailsButton>
+                Details
+              </DetailsButton>
+              <DetailsButton>
+                Reserve
+              </DetailsButton>
+            </Timeslot>
+            <Timeslot>
+              <DatePoint>
+                12.11.2023
+              </DatePoint>
+              <StatusPoint>
+                Status: free
+              </StatusPoint>
+              <RolePoint>
+                Role: waiter
+              </RolePoint>
+              <ShiftPoint>
+                Shift: 8AM-6PM
+              </ShiftPoint>
+              <DetailsButton>
+                Details
+              </DetailsButton>
+              <DetailsButton>
+                Reserve
+              </DetailsButton>
+            </Timeslot>
+            <Timeslot>
+              <DatePoint>
+                12.11.2023
+              </DatePoint>
+              <StatusPoint>
+                Status: free
+              </StatusPoint>
+              <RolePoint>
+                Role: waiter
+              </RolePoint>
+              <ShiftPoint>
+                Shift: 8AM-6PM
+              </ShiftPoint>
+              <DetailsButton>
+                Details
+              </DetailsButton>
+              <DetailsButton>
+                Reserve
+              </DetailsButton>
+            </Timeslot>
+            <Timeslot>
+              <DatePoint>
+                12.11.2023
+              </DatePoint>
+              <StatusPoint>
+                Status: free
+              </StatusPoint>
+              <RolePoint>
+                Role: waiter
+              </RolePoint>
+              <ShiftPoint>
+                Shift: 8AM-6PM
+              </ShiftPoint>
+              <DetailsButton>
+                Details
+              </DetailsButton>
+              <DetailsButton>
+                Reserve
+              </DetailsButton>
+            </Timeslot>
+            <Timeslot>
+              <DatePoint>
+                12.11.2023
+              </DatePoint>
+              <StatusPoint>
+                Status: free
+              </StatusPoint>
+              <RolePoint>
+                Role: waiter
+              </RolePoint>
+              <ShiftPoint>
+                Shift: 8AM-6PM
+              </ShiftPoint>
+              <DetailsButton>
+                Details
+              </DetailsButton>
+              <DetailsButton>
+                Reserve
+              </DetailsButton>
+            </Timeslot>
+            <Timeslot>
+              <DatePoint>
+                12.11.2023
+              </DatePoint>
+              <StatusPoint>
+                Status: free
+              </StatusPoint>
+              <RolePoint>
+                Role: waiter
+              </RolePoint>
+              <ShiftPoint>
+                Shift: 8AM-6PM
+              </ShiftPoint>
+              <DetailsButton>
+                Details
+              </DetailsButton>
+              <DetailsButton>
+                Reserve
               </DetailsButton>
             </Timeslot>
           </WeekRow>
@@ -606,4 +583,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default TimeslotDetailed;
